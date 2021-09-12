@@ -26,7 +26,9 @@ jobs:
       - name: Run local k6 test
         uses: k6io/action@v0.1
         with:
-          filename: test.js     
+          filename: test.js
+          cloud: true
+          token: ${{ 41f038d868c498a0ac44ce310856709db8c0b82beb1aecb638a5b15524ffacd1 }}
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
